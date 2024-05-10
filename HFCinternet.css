@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Alata", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contenido {
+   text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 3px solid #ccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.pagos_recientes {
+    text-align: left;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 12px;
+     border-left: 3px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     margin-top: 30px;
+     margin-bottom: 50px;
+     margin-right: 20px;
+     margin-left: 0px;
+     left: 0px;
+     position: absolute;
+ }
+/* AQUI VA LOS MENSAJES DE SI Y NO */
+.mensaje-quejas,
+.mensaje-orden,
+.mensaje-velocidad {
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(253, 253, 253);
+    color: #fff;
+    border-radius: 12px;
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /*top: -50px;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+h1 {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+    display: inline;
+}
+
+h4 {
+
+    text-align: center;
+    color: black;
+}
+
+.sugerencia {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.linea-punteada {
+    position: relative;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    height: px;
+    border-bottom: 3px dotted #460000;
+}
+
+.opciones {
+    margin-top: 50px;
+    display: inline;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    padding: 10px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #640f0f;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.si,
+.no {
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #640f0f;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c28181;
+}
+
+.opcion {
+    display: inline-block;
+}
+
+
+.saldos_ok {
+    font-size: 13px;
+    justify-content: left;
+    text-align: left;
+    display:inline-block;
+    border-color: #460000;
+    color: #460000;
+    border: 1px solid #460000;
+    border-radius: 12px;
+    width: 250px;
+    height: 90px;
+    padding: 8px;
+    margin-top: 20px;
+    position:fixed;
+    top: 130px;
+    left: 10px;
+
+}
+
+.saldos_no {
+    justify-content: center;
+    position: flex;
+
+}
+
+
+
+
+.orden_servicio {
+    font-size: 13px;
+    display: none;
+    border-color: #460000;
+    color: #460000;
+    border: 1px solid #460000;
+    border-radius: 12px;
+    width: 250px;
+    height: 180px;
+    padding: 8px;
+    margin-top: 20px;
+    position: absolute;
+    top: 330px;
+    left: 10px;
+}
+
+.quejas_abiertas {
+    font-size: 13px;
+    display: none;
+    border-color: #460000;
+    color: #460000;
+    border: 1px solid #460000;
+    border-radius: 12px;
+    width: 250px;
+    height: 180px;
+    padding: 8px;
+    margin-top: 20px;
+    position: absolute;
+    top: 330px;
+    left: 280px;
+
+}

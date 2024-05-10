@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="HFCinternet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Saldos</title>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="contenido" id="saldos">
+    <h1>SALDOS VENCIDO</h1>
+    <div class="opciones">
+      <div class="opcion">
+        <button onclick="openTipiPagos()">SI</button>
+        <div id="myModalPagos" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeTipiPagos()">&times;</span>
+            <p>SALDOS VENCIDO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--
+ 
+  Quejas 
+          <div id="mensaje-quejas" class="mensaje-quejas">
+            <h1>QUEJAS ABIERTAS ?</h1>
+              <div class="opciones">
+              <div class="opcion">
+                <button id="siquejasBtn" onclick="mostrarMensajeQuejas()">Si</button>
+              </div>
+              <div class="opcion">
+                <button id="noquejasBtn" onclick="mostrarOrden()">No</button>
+              </div>
+            </div>
+          </div>-->
+
+  <!-- Ordenes  
+          <div id="mensaje-orden" class="mensaje-orden">
+            <h1>ORDENES SERVICIOS ?</h1>
+              <div class="opciones">
+              <div class="opcion">
+                <button id="siOrdenBtn" onclick="mostrarMensajeOrden()">Si</button> 
+              </div>
+              <div class="opcion">
+                <button id="noOrdenBtn" onclick="mostrarVelocidad()">No</button>
+              </div>
+            </div>
+          </div>-->
+
+  <!-- equipo soporta velocidad 
+          <div id="mensaje-velocidad" class="mensaje-velocidad">
+            <h1>¿Equipo soporta Velocidad?</h1>
+              <div class="opciones">
+              <div class="opcion">
+                <button id="sivelBtn" onclick="mostrarMensajeVel()">Si</button> 
+              </div>
+              <div class="opcion">
+                <button id="novelBtn" onclick="mostrarOrden()">No</button>
+              </div>
+            </div>
+          </div> -->
+
+
+  <!-- Mensaje SALDOS
+  <div class="saldos_no">
+    <div id="mensaje-personalizado" class="saldos_ok">
+      <p>
+      <h4>SALDO VENCIDO</h4>
+      </p>
+          <button class="opcion" onclick="openTipi()">SI</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeTipi()">&times;</span>
+          <p>Se le indica que tiene saldo
+            vencido.
+            Se brinda soporte pero NO se
+            genera averia.
+            (Exceptuando si se tiene bloqueo y
+            tiene portadora OFF)</p>
+        </div>
+      </div>-->
+  <!-- 
+      <button onclick="openGuion()">Ver guion</button>
+      <div id="ModalGuion" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeGuion()">&times;</span>
+          <p>SALDO VENCIDO</p>
+        </div>
+      </div>
+    </div>
+
+    -->
+  <div id="mensaje-pagos" class="pagos_recientes">
+    <p>
+    <h4>PAGOS RECIENTES ?</h4>
+    </p>
+    <p>Reproceso en PISA
+      / Verificar pago Menor a 2 horas /
+      Si es mayor a 2 horas, transferir a Informacion Hogar</p>
+    <button onclick="openTipiPagos()">Tipificacion</button>
+    <div id="myModalPagos" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeTipiPagos()">&times;</span>
+        <p>PAGOS RECIENTES</p>
+      </div>
+    </div>
+
+
+    <button onclick="openGuionPagos()">Ver guion</button>
+    <div id="ModalGuionPagos" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeGuionPagos()">&times;</span>
+        <p>PAGOS RECIENTES</p>
+      </div>
+    </div>
+  </div>
+  <div id="mensaje-orden" class="orden_servicio">
+    <p>
+    <h4>ORDENES ABIERTA ?</h4>
+    </p>
+    <p>Informar al cliente sobre el aumento de velocidad
+      o cambio de tecnología que se está realizando.
+      Si la orden está en etapa comercial se debe de
+      generar caso WF para el area quien generó la OS.
+    </p>
+    <button onclick="openTipiOrden()">Tipificacion</button>
+    <div id="myModalOrden" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeTipiOrden()">&times;</span>
+        <p>ORDENES</p>
+      </div>
+    </div>
+    <button onclick="openGuionOrden()">Ver guion</button>
+    <div id="ModalGuionOrden" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeGuionOrden()">&times;</span>
+        <p>ORDENES</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="mensaje-quejas" class="quejas_abiertas">
+    <p>
+    <h4>QUEJAS ABIERTAS ?</h4>
+    </p>
+    <p>Seguimiento a la queja:Tipificación
+      Depende del tiempo de generación
+      de la queja
+    </p>
+    <button onclick="openTipiQuejas()">Tipificacion</button>
+    <div id="myModalQuejas" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeTipiQuejas()">&times;</span>
+        <p>QUEJAS</p>
+      </div>
+    </div>
+    <button onclick="openGuionQuejas()">Ver guion</button>
+    <div id="ModalGuionQuejas" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeGuionQuejas()">&times;</span>
+        <p>QUEJAS</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Mensaje QUEJAS
+            <div id="MenQuejas" class="MenQuejas">
+            <p>MENSAJE DE QUEJA.</p>
+              <p><h4><b>Sugerencia de Guion</b></h4></p>
+              <div class="linea-punteada"><br></div>
+              <span class="sugerencia"><button class="copy-button" 	onclick="copyToClipboard(this.parentElement.innerText.trim())">Lamentamos informarte que tu servicio se encuentra suspendido por saldo pendiente, el monto es QXXXX, Te invitamos a colocarte al día con tu factura ✔️, con el fin de que tu servicio sea restablecido a la normalidad lo más pronto posible, puedes realizar el pago fácil a través de 👉 gt.mipagoclaro.com. ¿Algo adicional en que te pueda ayudar? 😁</button></span>
+          </div>-->
+  <!-- Mensaje ORDEN
+            <div id="MenOrden" class="MenOrden">
+            <p>MENSAJE DE ORDEN.</p>
+              <p><h4><b>Sugerencia de Guion</b></h4></p>
+              <div class="linea-punteada"><br></div>
+              <span class="sugerencia"><button class="copy-button" 	onclick="copyToClipboard(this.parentElement.innerText.trim())">Lamentamos informarte que tu servicio se encuentra suspendido por saldo pendiente, el monto es QXXXX, Te invitamos a colocarte al día con tu factura ✔️, con el fin de que tu servicio sea restablecido a la normalidad lo más pronto posible, puedes realizar el pago fácil a través de 👉 gt.mipagoclaro.com. ¿Algo adicional en que te pueda ayudar? 😁</button></span>
+          </div>-->
+
+  <script src="./funcion.js"></script>
+  <script src="./modal.js"></script>
+</body>
+
+</html>
