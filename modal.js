@@ -90,37 +90,100 @@ window.onclick = function (event) {
 }
 
 
-/* REALIZA LA FUNCION DEL MODAL PAGOS */
+/* REALIZA LA FUNCION DEL MODAL VELOCIDAD CONTRATADA */
 
-function openTipiPagos() {
-    document.getElementById('myModalPagos').style.display = "block";
+function openTipiVel() {
+    document.getElementById('myModalVel').style.display = "block";
 }
 
-function closeTipiPagos() {
-    document.getElementById('myModalPagos').style.display = "none";
+function closeTipiVel() {
+    document.getElementById('myModalVel').style.display = "none";
 }
 
 window.onclick = function (event) {
-    if (event.target == document.getElementById('myModalPagos')) {
-        closeTipiPagos();
+    if (event.target == document.getElementById('myModalVel')) {
+        closeTipiVel();
     }
 }
 
-function openGuionPagos() {
-    document.getElementById('ModalGuionPagos').style.display = "block";
+function openGuionVel() {
+    document.getElementById('ModalGuionVel').style.display = "block";
 }
 
-function closeGuionPagos() {
-    document.getElementById('ModalGuionPagos').style.display = "none";
+function closeGuionVel() {
+    document.getElementById('ModalGuionVel').style.display = "none";
 }
 
 
 window.onclick = function (event) {
-    if (event.target == document.getElementById('myModalPagos')) {
-        closeGuionPagos();
+    if (event.target == document.getElementById('myModalVel')) {
+        closeGuionVel();
     }
 }
-/* REALIZA LA FUNCION DEL MODAL QUEJAS  */
+/* REALIZA LA FUNCION DEL MODAL FALLA VOZ Y DATOS  */
+
+function openTipiSenal() {
+    document.getElementById('myModalSenal').style.display = "block";
+}
+
+function closeTipiSenal() {
+    document.getElementById('myModalSenal').style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalSenal')) {
+        closeTipiSenal();
+    }
+}
+
+function openGuionSenal() {
+    document.getElementById('ModalGuionSenal').style.display = "block";
+}
+
+function closeGuionSenal() {
+    document.getElementById('ModalGuionSenal').style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalSenal')) {
+        closeGuionSenal();
+    }
+}
+
+/* REALIZA LA FUNCION DEL MODAL FALLA  GENERAL  */
+
+function openTipiFalla() {
+    document.getElementById('myModalFalla').style.display = "block";
+}
+
+function closeTipiFalla() {
+    document.getElementById('myModalFalla').style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalFalla')) {
+        closeTipiFalla();
+    }
+}
+
+function openGuionFalla() {
+    document.getElementById('ModalGuionFalla').style.display = "block";
+}
+
+function closeGuionFalla() {
+    document.getElementById('ModalGuionFalla').style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalFalla')) {
+        closeGuionFalla();
+    }
+}
+
+
+/* REALIZA LA FUNCION DEL MODAL QUEJAS */
 
 function openTipiQuejas() {
     document.getElementById('myModalQuejas').style.display = "block";

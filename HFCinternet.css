@@ -60,12 +60,12 @@ body {
 .contenido {
    text-align: left;
     background-color: #fff;
-    padding: 20px;
+    padding: 5px;
     border-radius: 12px;
     border-left: 3px solid #ccc;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 0px;
     left: 0px;
@@ -75,7 +75,38 @@ body {
 .pagos_recientes {
     text-align: left;
      background-color: #fff;
-     padding: 20px;
+     padding: 5px;
+     border-radius: 12px;
+     border-left: 3px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     margin-top: 10px;
+     margin-bottom: 20px;
+     margin-right: 20px;
+     margin-left: 0px;
+     left: 0px;
+     top: 50px;
+     position: absolute;
+ }
+ .orden_servicio {
+    text-align: left;
+     background-color: #fff;
+     padding: 5px;
+     border-radius: 12px;
+     border-left: 3px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     margin-top: 10px;
+     margin-bottom: 20px;
+     margin-right: 20px;
+     margin-left: 0px;
+     left: 0px;
+     top: 100px;
+     position: absolute;
+ }
+
+.vel_contratada {
+    text-align: left;
+     background-color: #fff;
+     padding: 5px;
      border-radius: 12px;
      border-left: 3px solid #ccc;
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -84,8 +115,60 @@ body {
      margin-right: 20px;
      margin-left: 0px;
      left: 0px;
+     top: 130px;
      position: absolute;
  }
+
+.falla_voz {
+    text-align: left;
+     background-color: #fff;
+     padding: 5px;
+     border-radius: 12px;
+     border-left: 3px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     margin-top: 30px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 0px;
+     left: 0px;
+     top: 180px;
+     position: absolute;
+ }
+
+.falla_general {
+    text-align: left;
+     background-color: #fff;
+     padding: 5px;
+     border-radius: 12px;
+     border-left: 3px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     margin-top: 30px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 0px;
+     left: 0px;
+     top: 230px;
+     position: absolute;
+ }
+
+ .quejas {
+    text-align: left;
+     background-color: #fff;
+     padding: 5px;
+     border-radius: 12px;
+     border-left: 3px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     margin-top: 30px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 0px;
+     left: 0px;
+     top: 280px;
+     position: absolute;
+ }
+
+
+
 /* AQUI VA LOS MENSAJES DE SI Y NO */
 .mensaje-quejas,
 .mensaje-orden,
@@ -108,7 +191,14 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 15px;
+    font-size: 10px;
+    color: #333;
+    display: inline;
+}
+
+h2 {
+    margin: 0;
+    font-size: 8px;
     color: #333;
     display: inline;
 }
@@ -205,21 +295,6 @@ button:hover {
 
 
 
-.orden_servicio {
-    font-size: 13px;
-    display: none;
-    border-color: #460000;
-    color: #460000;
-    border: 1px solid #460000;
-    border-radius: 12px;
-    width: 250px;
-    height: 180px;
-    padding: 8px;
-    margin-top: 20px;
-    position: absolute;
-    top: 330px;
-    left: 10px;
-}
 
 .quejas_abiertas {
     font-size: 13px;
