@@ -13,9 +13,9 @@
 </head>
 
 <body>
-
-  <div class="contenido" id="saldos">
-    <h1>SALDOS VENCIDO</h1>
+<div class="padre" id="padre">
+   <div class="contenido" id="saldos">
+      <h1>SALDOS VENCIDO</h1>
     <div class="opciones">
       <div class="opcion">
         <button onclick="openTipi()">SI</button>
@@ -164,12 +164,13 @@ servicio -R</p>
 
    <div class="quejas" id="quejas">
     <h1>QUEJAS ABIERTAS</h1>
-    <div class="opciones">
+        <div class="opciones">
       <div class="opcion">
         <button onclick="openTipiQuejas()">SI</button>
         <div id="myModalQuejas" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeTipiQuejas()">&times;</span>
+            <b>Accion</b></br>
             <p>Seguimiento a la queja:Tipificación
 Depende del tiempo de generación
 de la queja</p>
@@ -178,6 +179,99 @@ de la queja</p>
       </div>
     </div>
   </div>
+
+
+</div>
+<div class="linea-punteada"><br></div>
+
+<div class="padre" id="padre2">
+  <div class="puertos" id="puertos">
+    <h1>PUERTOS EN DOWN O DORMANT</h1>
+        <div class="opciones">
+      <div class="opcion">
+        <button onclick="openTipi¨Puertos()">SI</button>
+        <div id="myModalPuertos" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeTipiPuertos()">&times;</span>
+             <b>Accion</b></br>
+             <p>Confirmar que el cable coaxial esté bien
+conectado, apagar y encender el cable modem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="linea-punteada2"><br></div>
+<div class="padre" id="padre1">
+  <div class="falla_voz" id="falla_voz">
+    <h1>FALLA VOZ Y DATOS</h1>
+    <div class="opciones">
+      <div class="opcion">
+        <button onclick="openTipiSenal()">SI</button>
+        <div id="myModalSenal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeTipiSenal()">&times;</span>
+                <p><b>Accion:</b></br></b>
+            0. Verificar que el conector este bien apretado .
+1. Desconectar de la corriente.
+2.Solo Modem RCA (Quitar Tapa de Bateria, 
+deslizar seguro a la Izq o Derecha, Retirar Bateria.)
+3. Conectar Energia y Conectar Bateria. </p>
+<p><b>LEVANTO EL SERVICIO?:</b></br></b>
+<p><b>SI --></b> Reclamos -> Averias -> Internet HFC
+No navega -> Conexiones fisicas</p>
+<p><b>NO --></b>Se genera averia a etapa CZO, en el memo indicar
+voz y datos sin señal con niveles erroneos. 
+Reclamos -> Averias -> Internet HFC
+No navega -> Se generó avería </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="linea-punteada3"><br></div>
+<div class="padre" id="padre3">
+  <div class="niveles" id="niveles">
+    <h1>NIVELES EN UMP</h1>
+    <div class="opciones">
+      <div class="opcion">
+        <button onclick="openTipiSenal()">SI</button>
+        <div id="myModalSenal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeTipiSenal()">&times;</span>
+                <p><b>Accion:</b></br></b>
+            0. Verificar que el conector este bien apretado .
+1. Desconectar de la corriente.
+2.Solo Modem RCA (Quitar Tapa de Bateria, 
+deslizar seguro a la Izq o Derecha, Retirar Bateria.)
+3. Conectar Energia y Conectar Bateria. </p>
+<p><b>LEVANTO EL SERVICIO?:</b></br></b>
+<p><b>SI --></b> Reclamos -> Averias -> Internet HFC
+No navega -> Conexiones fisicas</p>
+<p><b>NO --></b>Se genera averia a etapa CZO, en el memo indicar
+voz y datos sin señal con niveles erroneos. 
+Reclamos -> Averias -> Internet HFC
+No navega -> Se generó avería </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
 
 
 
