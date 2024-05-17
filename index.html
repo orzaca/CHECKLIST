@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Iframes Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        iframe {
+            height: 100%;
+            border: 1px solid #000;
+        }
+        #iframe1, #iframe2 {
+            width: 40%;
+        }
+        #iframe3 {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="iframe1" src="./bienvenida.html"></iframe>
+    <iframe id="iframe2" src="./cheklist.html"></iframe>
+    <iframe id="iframe3" src="./block.html"></iframe>
+</body>
+</html>

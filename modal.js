@@ -214,6 +214,78 @@ window.onclick = function (event) {
     }
 }
 
+/* REALIZA LA FUNCION DEL MODAL PUERTOS EN UMP */
+
+function openTipiPuertos() {
+    document.getElementById('myModalPuertos').style.display = "block";
+}
+
+function closeTipiPuertos() {
+    document.getElementById('myModalPuertos').style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalPuertos')) {
+        closeTipiPuertos();
+    }
+}
+
+function openGuionPuertos() {
+    document.getElementById('ModalGuionPuerto').style.display = "block";
+}
+
+function closeGuionPuertos() {
+    document.getElementById('ModalGuionPuertos').style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalPuertos')) {
+        closeGuionPuertos();
+    }
+}
+
+
+/* REALIZA LA FUNCION DEL MODAL NIVELES OK */
+
+function openTipiNivel() {
+    document.getElementById('myModalNivel').style.display = "block";
+}
+
+function closeTipiNivel() {
+    document.getElementById('myModalNivel').style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalNivel')) {
+        closeTipiNivel();
+    }
+}
+
+function openGuionNivel() {
+    document.getElementById('ModalGuionNivel').style.display = "block";
+}
+
+function closeGuionNivel() {
+    document.getElementById('ModalGuionNivel').style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('myModalNivel')) {
+        closeGuionNivel();
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
